@@ -8,152 +8,65 @@
     <meta name="description" content="A collection of recipes we like.">
      <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
-      *,*:after,*:before{box-sizing:border-box}body{font-family: "Atkinson Hyperlegible",consolas,menlo,monaco,monospace;margin:10px auto;max-width:960px;font-size:1.5em;color:#444;background-color:#FEFCF9;padding:20px;}a{color:#07c;}input{font-family:consolas,menlo,monaco,monospace;font-size:1.2em;width:100%;border:2px solid #ccc;border-radius:5px;}h3{margin-bottom:0;}p.prep-time{font-style:italic;}p.suggestions{font-size:0.5em;}h1,h2{margin:0;}h1.cookbook{text-align:center; margin-bottom: 15px;}h2.recipe-result{margin-top:20px;font-size: 1.2em;}div.tag{display:inline-block;background-color:#ddf1ff;padding:5px;font-size:0.5em;user-select: none;}@media print{body{font-size:1em;background-color:white;}div#extra{display:none;}div.recipe{border: none;}p.home{display:none;}a{color: #444;text-decoration:none;}div.tags{display:none;}}
+      *,*:after,*:before{box-sizing:border-box}body{font-family: "Atkinson Hyperlegible",consolas,menlo,monaco,monospace;margin:10px auto;max-width:960px;font-size:1.5em;color:#444;background-color:#FEFCF9;padding:20px;}a{color:#07c;}input{font-family:"Atkinson Hyperlegible",consolas,menlo,monaco,monospace;font-size:1.2em;width:100%;border:2px solid #ccc;border-radius:5px;}h3{margin: 40px 0 -20px 0;}p.prep-time{font-style:italic;}p.suggestions{font-size:0.5em;}h1,h2{margin:0;}h1.cookbook{text-align:center; margin-bottom: 15px;}h2{margin-top:20px;font-size: 1.2em;}div.tag{display:inline-block;background-color:#ddf1ff;padding:5px;font-size:0.5em;user-select: none;}@media print{body{font-size:1em;background-color:white;}div#extra{display:none;}div.recipe{border: none;}p.home{display:none;}a{color: #444;text-decoration:none;}div.tags{display:none;}}
     </style>
   </head>
   <body>
     
-<div class="recipe-search">
-  <h1 class="cookbook">Cookbook</h1>
-  <input type="text" id="search" />
-  <p class="suggestions">Examples: <a href="#" class="example">Pasta</a>, <a href="#" class="example">Dessert</a>, <a href="#" class="example">Slow cooker</a></p>
-  <div class="recipe-list">
-    
-    <h2 class="recipe-result" data-keywords="bread bread machine: high altitude french bread">
-      <a href="/cookbook/bread-machine-high-altitude-french-bread/">Bread machine: High altitude French bread</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="snack cheesy garlic meatball bombs">
-      <a href="/cookbook/cheesy-garlic-meatball-bombs/">Cheesy garlic meatball bombs</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner soup chicken gnocchi soup">
-      <a href="/cookbook/chicken-gnocchi-soup/">Chicken gnocchi soup</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="casserole dinner chicken quinoa casserole">
-      <a href="/cookbook/chicken-quinoa-casserole/">Chicken quinoa casserole</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="cocktail coquitos">
-      <a href="/cookbook/coquitos/">Coquitos</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner grandma german&#x27;s frybread">
-      <a href="/cookbook/grandma-germans-frybread/">Grandma German&#x27;s frybread</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="cocktail hawaiian jesus">
-      <a href="/cookbook/hawaiian-jesus/">Hawaiian Jesus</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="lunch sandwich j-bolt">
-      <a href="/cookbook/j-bolt/">J-BOLT</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="bread jalapeño beer bread">
-      <a href="/cookbook/jalapeno-beer-bread/">Jalapeño beer bread</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner korean korean ground beef rice bowl">
-      <a href="/cookbook/korean-ground-beef-rice-bowl/">Korean ground beef rice bowl</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner lunch pasta lemon pepper chicken pasta">
-      <a href="/cookbook/lemon-pepper-chicken-pasta/">Lemon pepper chicken pasta</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="breakfast lemonade pancakes">
-      <a href="/cookbook/lemonade-pancakes/">Lemonade pancakes</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner one-pot one-pan honey garlic chicken with asparagus">
-      <a href="/cookbook/one-pan-honey-garlic-chicken-with-asparagus/">One-pan honey garlic chicken with asparagus</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="snack pico de gallo with mango">
-      <a href="/cookbook/pico-de-gallo-with-mango/">Pico de gallo with mango</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner pork chops like a boss">
-      <a href="/cookbook/pork-chops-like-a-boss/">Pork chops like a boss</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="breakfast shmoop waffles">
-      <a href="/cookbook/waffles/">Shmoop waffles</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner slow cooker soup slow cooker chicken noodle soup">
-      <a href="/cookbook/slow-cooker-chicken-noodle-soup/">Slow cooker chicken noodle soup</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="slow cooker soup slow cooker creamy ham and potato soup">
-      <a href="/cookbook/ham-and-potato-soup/">Slow cooker creamy ham and potato soup</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner slow cooker slow cooker pulled pork sandwiches">
-      <a href="/cookbook/pulled-pork-sandwiches/">Slow cooker pulled pork sandwiches</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner slow cooker slow cooker spicy mongolian beef">
-      <a href="/cookbook/slow-cooker-spicy-mongolian-beef/">Slow cooker spicy mongolian beef</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner slow cooker slow cooker white chicken chili">
-      <a href="/cookbook/slow-cooker-spicy-white-chicken-chili/">Slow cooker white chicken chili</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner pasta spaghetti">
-      <a href="/cookbook/spaghetti/">Spaghetti</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner marinade steak marinade">
-      <a href="/cookbook/steak-marinade/">Steak marinade</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dessert pie strawberry rhubarb pie">
-      <a href="/cookbook/strawberry-rhubarb-pie/">Strawberry rhubarb pie</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dessert strawberry shortcake">
-      <a href="/cookbook/strawberry-shortcake/">Strawberry shortcake</a>
-    </h2>
-    
-    <h2 class="recipe-result" data-keywords="dinner sweet and sour meatballs">
-      <a href="/cookbook/sweet-and-sour-meatballs/">Sweet and sour meatballs</a>
-    </h2>
-    
-  </div>
-</div>
-
-<style id='search_style'></style>
-
-<script>
-
-  var search_style = document.getElementById('search_style');
-
-  function search(txt) {
-    if (!txt) {
-      search_style.innerHTML = '';
-    } else {
-      search_style.innerHTML = '.recipe-result:not([data-keywords*="' + txt.toLowerCase() + '"]) { display: none; }';
-    };
-  }
-
-  var searchbox = document.getElementById('search');
-
-  searchbox.addEventListener('keyup', function() {
-    search(this.value);
-  });
-
-  var examples = document.querySelectorAll('a.example');
-  for (var i=0; i<examples.length; i++) {
-    examples[i].addEventListener('click', function() {
-      searchbox.value = this.textContent;
-      search(searchbox.value);
-    })
-  }
-</script>
+  <h1>Categories</h1>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/breads/">breads</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/breakfast/">breakfast</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/casserole/">casseroles</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/cocktail/">cocktails</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/comfort-food/">comfort food</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/dessert/">desserts</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/dinner/">dinners</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/lunch/">lunch</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/one-pan/">one pan</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/pasta/">pasta</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/slow-cooker/">slow cooker</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/snack/">snacks</a>
+  </h2>
+  
+  <h2 class="recipe-result">
+    <a href="/cookbook/categories/soup/">soup</a>
+  </h2>
+  
 
   </body>
 </html>
